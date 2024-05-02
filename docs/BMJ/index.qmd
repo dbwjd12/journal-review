@@ -33,13 +33,14 @@ Family insurance identification number
 
 ## Methods - Study design and participants
 
-\[\](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study population2.jpg
+![](docs/BMJ/study population2.jpg)
 
 ## Methods - Study design and participants
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study%20population1.jpg)
+![](docs/BMJ/study population1.jpg)
 
-## Methods - Exposures ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/exposure1.jpg)
+## Methods - Exposures 
+![](docs/BMJ/exposure1.jpg)
 
 ## Methods - Outcomes
 
@@ -53,13 +54,14 @@ Family insurance identification number
 
 ## Methods - Covariates (matching variables)
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates1.jpg)
+![](docs/BMJ/covariates1.jpg)
 
-## Methods - Covariates (matching variables) ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates2.jpg)
+## Methods - Covariates (matching variables) 
+![](docs/BMJ/covariates2.jpg)
 
 ## Methods - Covariates (unmatching variables)
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates3.jpg)
+![](docs/BMJ/covariates3.jpg)
 
 ## Methods - propensity score matching
 
@@ -97,11 +99,11 @@ data.table(treated = c(0.0, 1.4, 0.7, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.
 
 ## Methods - propensity score matching
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/matching1.jpg)
+![](docs/BMJ/matching1.jpg)
 
 ## Methods - Cohorts
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study%20population1.jpg)
+![](docs/BMJ/study population1.jpg)
 
 ## Methods - Statistical analysis
 
@@ -113,36 +115,36 @@ data.table(treated = c(0.0, 1.4, 0.7, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.
 
 ## Results - table1
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table1.1jpg)
+![](docs/BMJ/Table1.1jpg)
 
 ## Results - table1
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table1.2.jpg)
+![](docs/BMJ/Table1.2.jpg)
 
 ## Results - table1
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table1.3.jpg)
+![](docs/BMJ/Table1.3.jpg)
 
 ## Results - table2
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table2.jpg)
+![](docs/BMJ/Table2.jpg)
 
 ## Results - Table3
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table3.jpg)
+![](docs/BMJ/Table3.jpg)
 
 ## Results - table3
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table3.2.jpg)
+![](docs/BMJ/Table3.2.jpg)
 
 ## Results - table4
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table4.1.jpg)
+![](docs/BMJ/Table4.1.jpg)
 
 ## Results - table4
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table4.2.jpg)
+![](docs/BMJ/Table4.2.jpg)
 
 ## Results - table5 (sibling)
 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table5.jpg)
+![](docs/BMJ/Table5.jpg)
