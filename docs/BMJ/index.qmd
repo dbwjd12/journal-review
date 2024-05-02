@@ -30,7 +30,7 @@ subsequent risk of neuropsychiatric disorders in children
 
 ## Methods - Study design and participants 
 
-![](docs/BMJ/study population2.jpg)
+![](journal-review/docs/BMJ/study population2.jpg)
 
 ## Methods - Study design and participants
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study population1.jpg)
