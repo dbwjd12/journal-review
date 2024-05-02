@@ -339,19 +339,35 @@
 </section>
 <section id="methods---data-source" class="slide level2">
 <h2>Methods - Data source</h2>
-<ul>
-<li>National Health Insurance Service ::: {.fragment}</li>
-<li>children born between 1 January 2010 and 31 December 2017 :::</li>
-<li>Family insurance identification number</li>
-</ul>
+<p><br></p>
+<div class="fragment fade-in">
+<p>National Health Insurance Service</p>
+</div>
+<div class="fragment fade-in">
+<p>children born between 1 January 2010 and 31 December 2017</p>
+</div>
+<div class="fragment fade-in">
+<p>Family insurance identification number</p>
+</div>
 </section>
 <section id="methods---study-design-and-participants" class="slide level2">
 <h2>Methods - Study design and participants</h2>
-
-<img data-src="journal-review/docs/BMJ/study%20population2.jpg" class="r-stretch"></section>
+<p>[](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study population2.jpg</p>
+</section>
 <section id="methods---study-design-and-participants-1" class="slide level2">
 <h2>Methods - Study design and participants</h2>
-<p><img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study%20population1.jpg"> ## Methods - Exposures <img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/exposure1.jpg"> ## Methods - Outcomes - ICD 10, F code - at least 2 diseases - severe : psychotic feature</p>
+
+<img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study%20population1.jpg" class="r-stretch"></section>
+<section id="methods---exposures" class="slide level2">
+<h2>Methods - Exposures <img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/exposure1.jpg"></h2>
+</section>
+<section id="methods---outcomes" class="slide level2">
+<h2>Methods - Outcomes</h2>
+<ul>
+<li>ICD 10, F code</li>
+<li>at least 2 diseases</li>
+<li>severe : psychotic feature</li>
+</ul>
 </section>
 <section id="methods---covariates" class="slide level2">
 <h2>Methods - Covariates</h2>
@@ -361,7 +377,10 @@
 </section>
 <section id="methods---covariates-matching-variables" class="slide level2">
 <h2>Methods - Covariates (matching variables)</h2>
-<p><img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates1.jpg"> ## Methods - Covariates (matching variables) <img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates2.jpg"></p>
+
+<img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates1.jpg" class="r-stretch"></section>
+<section id="methods---covariates-matching-variables-1" class="slide level2">
+<h2>Methods - Covariates (matching variables) <img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates2.jpg"></h2>
 </section>
 <section id="methods---covariates-unmatching-variables" class="slide level2">
 <h2>Methods - Covariates (unmatching variables)</h2>
@@ -375,15 +394,72 @@
 </section>
 <section id="greedy-nearest-neighbor-matching" class="slide level2">
 <h2>greedy nearest neighbor matching</h2>
-<p>data.table(treated = seq(0,10,0.7), untreated = seq(1,15,1))</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>    treated untreated
+ 1:     0.0         1
+ 2:     0.7         2
+ 3:     1.4         3
+ 4:     2.1         4
+ 5:     2.8         5
+ 6:     3.5         6
+ 7:     4.2         7
+ 8:     4.9         8
+ 9:     5.6         9
+10:     6.3        10
+11:     7.0        11
+12:     7.7        12
+13:     8.4        13
+14:     9.1        14
+15:     9.8        15</code></pre>
+</div>
+</div>
 </section>
 <section id="greedy-nearest-neighbor-matching---order" class="slide level2">
 <h2>greedy nearest neighbor matching - order</h2>
-<p>data.table(treated = c(0.0, 1.4, 0.7, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.7, 8.4, 9.1, 9.8), untreated = seq(1,15,1))</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>    treated untreated
+ 1:     0.0         1
+ 2:     1.4         2
+ 3:     0.7         3
+ 4:     2.1         4
+ 5:     2.8         5
+ 6:     3.5         6
+ 7:     4.2         7
+ 8:     4.9         8
+ 9:     5.6         9
+10:     6.3        10
+11:     7.0        11
+12:     7.7        12
+13:     8.4        13
+14:     9.1        14
+15:     9.8        15</code></pre>
+</div>
+</div>
 </section>
 <section id="greedy-nearest-neighbor-matching---replacement" class="slide level2">
 <h2>greedy nearest neighbor matching - replacement</h2>
-<p>data.table(treated = c(0.0, 1.4, 0.7, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.7, 8.4, 9.1, 9.8), untreated = seq(0,14,1))</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>    treated untreated
+ 1:     0.0         0
+ 2:     1.4         1
+ 3:     0.7         2
+ 4:     2.1         3
+ 5:     2.8         4
+ 6:     3.5         5
+ 7:     4.2         6
+ 8:     4.9         7
+ 9:     5.6         8
+10:     6.3         9
+11:     7.0        10
+12:     7.7        11
+13:     8.4        12
+14:     9.1        13
+15:     9.8        14</code></pre>
+</div>
+</div>
 </section>
 <section id="methods---propensity-score-matching-1" class="slide level2">
 <h2>Methods - propensity score matching</h2>
@@ -396,8 +472,12 @@
 </section>
 <section id="methods---propensity-score-matching-2" class="slide level2">
 <h2>Methods - propensity score matching</h2>
-<p><img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/matching1.jpg"> ## Methods - Cohorts <img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study%20population1.jpg"></p>
-</section>
+
+<img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/matching1.jpg" class="r-stretch"></section>
+<section id="methods---cohorts" class="slide level2">
+<h2>Methods - Cohorts</h2>
+
+<img data-src="/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study%20population1.jpg" class="r-stretch"></section>
 <section id="methods---statistical-analysis" class="slide level2">
 <h2>Methods - Statistical analysis</h2>
 <ul>
@@ -659,6 +739,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
