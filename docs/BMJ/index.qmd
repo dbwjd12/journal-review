@@ -11,106 +11,138 @@ format:
 editor: visual
 ---
 
+## Introduction
 
+-   association between maternal opioid exposure and subsequent risk of neuropsychiatric disorders in children
 
+## Methods - Data source
 
-## Introduction 
+<br/>
 
-- association between maternal opioid exposure and 
-subsequent risk of neuropsychiatric disorders in children
-
-
-## Methods - Data source 
-
-- National Health Insurance Service 
-::: {.fragment}
-- children born between 1 January 2010 and 31 December 2017
+::: {.fragment .fade-in}
+National Health Insurance Service
 :::
-- Family insurance identification number
 
-## Methods - Study design and participants 
+::: {.fragment .fade-in}
+children born between 1 January 2010 and 31 December 2017
+:::
 
-![](journal-review/docs/BMJ/study population2.jpg)
+::: {.fragment .fade-in}
+Family insurance identification number
+:::
 
 ## Methods - Study design and participants
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study population1.jpg)
-## Methods - Exposures
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/exposure1.jpg)
-## Methods - Outcomes 
-- ICD 10, F code
-- at least 2 diseases
-- severe : psychotic feature 
 
+![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study population2.jpg
 
-## Methods - Covariates 
-- propensity score matching 
+## Methods - Study design and participants
+
+![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study%20population1.jpg)
+
+## Methods - Exposures ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/exposure1.jpg)
+
+## Methods - Outcomes
+
+-   ICD 10, F code
+-   at least 2 diseases
+-   severe : psychotic feature
+
+## Methods - Covariates
+
+-   propensity score matching
 
 ## Methods - Covariates (matching variables)
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates1.jpg)
-## Methods - Covariates (matching variables)
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates2.jpg)
+
+## Methods - Covariates (matching variables) ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates2.jpg)
 
 ## Methods - Covariates (unmatching variables)
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/covariates3.jpg)
 
-## Methods - propensity score matching 
-- matching method : greedy nearest-neighbor matching within specified caliper(0.001)
+## Methods - propensity score matching
 
-## greedy nearest neighbor matching 
-data.table(treated = seq(0,10,0.7),
-untreated = seq(1,15,1))
+-   matching method : greedy nearest-neighbor matching within specified caliper(0.001)
 
-## greedy nearest neighbor matching - order 
-data.table(treated = c(0.0, 1.4, 0.7, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.7, 8.4, 9.1, 9.8),
-untreated = seq(1,15,1))
+## greedy nearest neighbor matching
+
+```{r}
+
+library(data.table) 
+data.table(treated = seq(0,10,0.7), untreated = seq(1,15,1))
+```
+
+## greedy nearest neighbor matching - order
+
+```{r}
+
+library(data.table)
+data.table(treated = c(0.0, 1.4, 0.7, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.7, 8.4, 9.1, 9.8), untreated = seq(1,15,1))
+```
 
 ## greedy nearest neighbor matching - replacement
-data.table(treated = c(0.0, 1.4, 0.7, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.7, 8.4, 9.1, 9.8),
-untreated = seq(0,14,1))
+
+```{r}
+library(data.table) 
+data.table(treated = c(0.0, 1.4, 0.7, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.7, 8.4, 9.1, 9.8), untreated = seq(0,14,1))
+```
 
 ## Methods - propensity score matching
-- matching method : greedy nearest-neighbor matching within specified caliper(0.001)
-- random order
-- replacement
-- 1:5 
 
+-   matching method : greedy nearest-neighbor matching within specified caliper(0.001)
+-   random order
+-   replacement
+-   1:5
 
-## Methods - propensity score matching 
+## Methods - propensity score matching
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/matching1.jpg)
-## Methods - Cohorts 
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study population1.jpg)
+
+## Methods - Cohorts
+
+![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/study%20population1.jpg)
 
 ## Methods - Statistical analysis
--  Hazard ratios with 95% confidence intervals (CIs) using Cox proportional hazards model 
-- crude / adjusted / fully adjusted 
-- maternal age at delivery years, infant’s sex, region of residence, household income level, birth season, parity, maternal mental illness, severe maternal morbidity score, hospital outpatient visit, hospital admission contact  
-- history of maternal neuropsychiatric conditions, use of NSAIDs, use of acetaminophen
-- child screening cohort : adjusted for breastfeeding history
+
+-   Hazard ratios with 95% confidence intervals (CIs) using Cox proportional hazards model
+-   crude / adjusted / fully adjusted
+-   maternal age at delivery years, infant's sex, region of residence, household income level, birth season, parity, maternal mental illness, severe maternal morbidity score, hospital outpatient visit, hospital admission contact\
+-   history of maternal neuropsychiatric conditions, use of NSAIDs, use of acetaminophen
+-   child screening cohort : adjusted for breastfeeding history
 
 ## Results - table1
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table1.1jpg)
 
 ## Results - table1
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table1.2.jpg)
 
 ## Results - table1
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table1.3.jpg)
 
-## Results - table2 
+## Results - table2
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table2.jpg)
 
 ## Results - Table3
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table3.jpg)
 
 ## Results - table3
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table3.2.jpg)
 
 ## Results - table4
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table4.1.jpg)
 
 ## Results - table4
+
 ![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table4.2.jpg)
 
 ## Results - table5 (sibling)
-![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table5.jpg)
 
+![](/home/yjyoon/ShinyApps/journal-review/docs/BMJ/Table5.jpg)
