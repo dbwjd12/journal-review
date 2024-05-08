@@ -337,8 +337,12 @@
 <li>association between maternal opioid exposure and subsequent risk of neuropsychiatric disorders in children</li>
 </ul>
 </section>
-<section id="methods---data-source" class="slide level2">
-<h2>Methods - Data source</h2>
+<section id="methods" class="slide level2">
+<h2>Methods</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Data source</a></li><li><a href="#tabset-1-2">Study design and participants</a></li><li><a href="#tabset-1-3">Study design and participants</a></li><li><a href="#tabset-1-4">Exposures</a></li><li><a href="#tabset-1-5">Outcomes</a></li><li><a href="#tabset-1-6">Covariates</a></li><li><a href="#tabset-1-7">Covariates (matching variables)</a></li><li><a href="#tabset-1-8">Covariates (matching variables)</a></li><li><a href="#tabset-1-9">Covariates (unmatching variables)</a></li><li><a href="#tabset-1-10">propensity score matching</a></li><li><a href="#tabset-1-11">greedy nearest neighbor matching</a></li><li><a href="#tabset-1-12">greedy nearest neighbor matching - order</a></li><li><a href="#tabset-1-13">propensity score matching</a></li><li><a href="#tabset-1-14">propensity score matching</a></li><li><a href="#tabset-1-15">Cohorts</a></li><li><a href="#tabset-1-16">Statistical analysis</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
 <p><br></p>
 <div class="fragment fade-in">
 <p>National Health Insurance Service</p>
@@ -349,53 +353,43 @@
 <div class="fragment fade-in">
 <p>Family insurance identification number</p>
 </div>
-</section>
-<section id="methods---study-design-and-participants" class="slide level2">
-<h2>Methods - Study design and participants</h2>
-
-<img data-src="docs/BMJ/study%20population2.jpg" class="r-stretch"></section>
-<section id="methods---study-design-and-participants-1" class="slide level2">
-<h2>Methods - Study design and participants</h2>
-
-<img data-src="docs/BMJ/study%20population1.jpg" class="r-stretch"></section>
-<section id="methods---exposures" class="slide level2">
-<h2>Methods - Exposures</h2>
-
-<img data-src="docs/BMJ/exposure1.jpg" class="r-stretch"></section>
-<section id="methods---outcomes" class="slide level2">
-<h2>Methods - Outcomes</h2>
+</div>
+<div id="tabset-1-2">
+<p><img data-src="docs/BMJ/study%20population2.jpg"></p>
+</div>
+<div id="tabset-1-3">
+<p><img data-src="journal-review/docs/BMJ/study%20population1.jpg"></p>
+</div>
+<div id="tabset-1-4">
+<p><img data-src="journal-review/docs/BMJ/exposure1.jpg"></p>
+</div>
+<div id="tabset-1-5">
 <ul>
 <li>ICD 10, F code</li>
 <li>at least 2 diseases</li>
 <li>severe : psychotic feature</li>
 </ul>
-</section>
-<section id="methods---covariates" class="slide level2">
-<h2>Methods - Covariates</h2>
+</div>
+<div id="tabset-1-6">
 <ul>
 <li>propensity score matching</li>
 </ul>
-</section>
-<section id="methods---covariates-matching-variables" class="slide level2">
-<h2>Methods - Covariates (matching variables)</h2>
-
-<img data-src="docs/BMJ/covariates1.jpg" class="r-stretch"></section>
-<section id="methods---covariates-matching-variables-1" class="slide level2">
-<h2>Methods - Covariates (matching variables)</h2>
-
-<img data-src="docs/BMJ/covariates2.jpg" class="r-stretch"></section>
-<section id="methods---covariates-unmatching-variables" class="slide level2">
-<h2>Methods - Covariates (unmatching variables)</h2>
-
-<img data-src="docs/BMJ/covariates3.jpg" class="r-stretch"></section>
-<section id="methods---propensity-score-matching" class="slide level2">
-<h2>Methods - propensity score matching</h2>
+</div>
+<div id="tabset-1-7">
+<p><img data-src="journal-review/docs/BMJ/covariates1.jpg"></p>
+</div>
+<div id="tabset-1-8">
+<p><img data-src="journal-review/docs/BMJ/covariates2.jpg"></p>
+</div>
+<div id="tabset-1-9">
+<p><img data-src="journal-review/docs/BMJ/covariates3.jpg"></p>
+</div>
+<div id="tabset-1-10">
 <ul>
 <li>matching method : greedy nearest-neighbor matching within specified caliper(0.001)</li>
 </ul>
-</section>
-<section id="greedy-nearest-neighbor-matching" class="slide level2">
-<h2>greedy nearest neighbor matching</h2>
+</div>
+<div id="tabset-1-11">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>    treated untreated
@@ -416,9 +410,8 @@
 15:     9.8        15</code></pre>
 </div>
 </div>
-</section>
-<section id="greedy-nearest-neighbor-matching---order" class="slide level2">
-<h2>greedy nearest neighbor matching - order</h2>
+</div>
+<div id="tabset-1-12">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>    treated untreated
@@ -439,94 +432,82 @@
 15:     9.8        15</code></pre>
 </div>
 </div>
-</section>
-<section id="greedy-nearest-neighbor-matching---replacement" class="slide level2">
-<h2>greedy nearest neighbor matching - replacement</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>    treated untreated
- 1:     0.0         0
- 2:     1.4         1
- 3:     0.7         2
- 4:     2.1         3
- 5:     2.8         4
- 6:     3.5         5
- 7:     4.2         6
- 8:     4.9         7
- 9:     5.6         8
-10:     6.3         9
-11:     7.0        10
-12:     7.7        11
-13:     8.4        12
-14:     9.1        13
-15:     9.8        14</code></pre>
 </div>
-</div>
-</section>
-<section id="methods---propensity-score-matching-1" class="slide level2">
-<h2>Methods - propensity score matching</h2>
+<div id="tabset-1-13">
 <ul>
 <li>matching method : greedy nearest-neighbor matching within specified caliper(0.001)</li>
 <li>random order</li>
 <li>replacement</li>
 <li>1:5</li>
 </ul>
-</section>
-<section id="methods---propensity-score-matching-2" class="slide level2">
-<h2>Methods - propensity score matching</h2>
-
-<img data-src="docs/BMJ/matching1.jpg" class="r-stretch"></section>
-<section id="methods---cohorts" class="slide level2">
-<h2>Methods - Cohorts</h2>
-
-<img data-src="docs/BMJ/study%20population1.jpg" class="r-stretch"></section>
-<section id="methods---statistical-analysis" class="slide level2">
-<h2>Methods - Statistical analysis</h2>
+</div>
+<div id="tabset-1-14">
+<p><img data-src="journal-review/docs/BMJ/matching1.jpg"></p>
+</div>
+<div id="tabset-1-15">
+<p><img data-src="journal-review/docs/BMJ/study%20population1.jpg"></p>
+</div>
+<div id="tabset-1-16">
 <ul>
 <li>Hazard ratios with 95% confidence intervals (CIs) using Cox proportional hazards model</li>
 <li>crude / adjusted / fully adjusted</li>
-<li>maternal age at delivery years, infant’s sex, region of residence, household income level, birth season, parity, maternal mental illness, severe maternal morbidity score, hospital outpatient visit, hospital admission contact<br>
-</li>
+<li>maternal age at delivery years, infant’s sex, region of residence, household income level, birth season, parity, maternal mental illness, severe maternal morbidity score, hospital outpatient visit, hospital admission contact ::: {.fragment .fade-in}</li>
 <li>history of maternal neuropsychiatric conditions, use of NSAIDs, use of acetaminophen</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fragment fade-in">
+<ul>
 <li>child screening cohort : adjusted for breastfeeding history</li>
 </ul>
+</div>
+<p>:::</p>
 </section>
 <section id="results---table1" class="slide level2">
 <h2>Results - table1</h2>
 
-<img data-src="docs/BMJ/Table1.1jpg" class="r-stretch"></section>
+<img data-src="journal-review/docs/BMJ/Table1.1jpg" class="r-stretch"></section>
 <section id="results---table1-1" class="slide level2">
 <h2>Results - table1</h2>
 
-<img data-src="docs/BMJ/Table1.2.jpg" class="r-stretch"></section>
+<img data-src="journal-review/docs/BMJ/Table1.2.jpg" class="r-stretch"></section>
 <section id="results---table1-2" class="slide level2">
 <h2>Results - table1</h2>
 
-<img data-src="docs/BMJ/Table1.3.jpg" class="r-stretch"></section>
+<img data-src="journal-review/docs/BMJ/Table1.3.jpg" class="r-stretch"></section>
 <section id="results---table2" class="slide level2">
 <h2>Results - table2</h2>
 
-<img data-src="docs/BMJ/Table2.jpg" class="r-stretch"></section>
+<img data-src="journal-review/docs/BMJ/Table2.jpg" class="r-stretch"></section>
+<section id="results---table1-3" class="slide level2">
+<h2>Results - table1</h2>
+
+<img data-src="journal-review/docs/BMJ/Tables16.jpg" class="r-stretch"></section>
+<section id="results---table1-4" class="slide level2">
+<h2>Results - table1</h2>
+
+<img data-src="journal-review/docs/BMJ/Tables17.jpg" class="r-stretch"></section>
 <section id="results---table3" class="slide level2">
 <h2>Results - Table3</h2>
 
-<img data-src="docs/BMJ/Table3.jpg" class="r-stretch"></section>
+<img data-src="journal-review/docs/BMJ/Table3.jpg" class="r-stretch"></section>
 <section id="results---table3-1" class="slide level2">
 <h2>Results - table3</h2>
 
-<img data-src="docs/BMJ/Table3.2.jpg" class="r-stretch"></section>
+<img data-src="journal-review/docs/BMJ/Table3.2.jpg" class="r-stretch"></section>
 <section id="results---table4" class="slide level2">
 <h2>Results - table4</h2>
 
-<img data-src="docs/BMJ/Table4.1.jpg" class="r-stretch"></section>
+<img data-src="journal-review/docs/BMJ/Table4.1.jpg" class="r-stretch"></section>
 <section id="results---table4-1" class="slide level2">
 <h2>Results - table4</h2>
 
-<img data-src="docs/BMJ/Table4.2.jpg" class="r-stretch"></section>
+<img data-src="journal-review/docs/BMJ/Table4.2.jpg" class="r-stretch"></section>
 <section id="results---table5-sibling" class="slide level2">
 <h2>Results - table5 (sibling)</h2>
 
-<img data-src="docs/BMJ/Table5.jpg" class="r-stretch"><div class="footer footer-default">
+<img data-src="journal-review/docs/BMJ/Table5.jpg" class="r-stretch"><div class="footer footer-default">
 
 </div>
 </section>
