@@ -55,6 +55,12 @@ Family insurance identification number
 -   at least 2 diseases
 -   severe : psychotic feature
 
+:::
+
+## Methods - covariates
+::: {.panel-tabset}
+
+
 ### Covariates
 
 -   propensity score matching
@@ -69,6 +75,10 @@ Family insurance identification number
 ### Covariates (unmatching variables)
 
 ![](journal-review/docs/BMJ/covariates3.jpg)
+:::
+
+## Methods
+::: {.panel-tabset} 
 
 ### propensity score matching
 
@@ -102,7 +112,11 @@ data.table(treated = c(0.0, 1.4, 0.7, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.
 ### propensity score matching
 
 ![](journal-review/docs/BMJ/matching1.jpg)
+:::
 
+## Methods
+::: {.panel-tabset} 
+ 
 ### Cohorts
 
 ![](journal-review/docs/BMJ/study population1.jpg)
@@ -168,3 +182,13 @@ data.table(treated = c(0.0, 1.4, 0.7, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6, 6.3, 7.0, 7.
 ## Results - table5 (sibling)
 
 ![](journal-review/docs/BMJ/Table5.jpg)
+## Strengths
+- validated and large sample
+- characterise numerous potential confounders
+- various study designs
+
+## Limitations
+- Prescriptions may not always reflect the actual consumption of the medication
+- even with our sibling controlled analyses, potential confounding by unobserved non-shared familial factors exists
+- an association but not explain the causal association 
+owing to the observational nature of our study
