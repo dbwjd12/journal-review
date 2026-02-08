@@ -1,0 +1,261 @@
+---
+title: "Mental health before and during the COVID-19 pandemic:
+a longitudinal probability sample survey of the UK
+population"
+format: html
+editor: visual
+---
+
+# Backgrounds
+
+# Methods
+
+## Study design and participants
+
+-   UKHLS : The UK Household Longitudinal Study (UKHLS; Understanding Society) is an ongoing panel survey of more than 40000 households that began in 2009.
+
+-   From April 23 to April 30, 2020, members of households who participated in either of the two most recent UKHLS data collections (Waves 8 or 9), who were older than age 16 years, were invited to complete the first wave of the COVID-19 web survey.
+
+-   Both the UKHLS main survey waves and the COVID-19 web survey included the 12-item General Health Questionnaire (GHQ-12), which was used as the primary outcome measure.
+
+-   **Repeated cross-sectional analysis:**\
+    UKHLS Waves 6–9 participants with available GHQ-12 data were included to examine overall temporal trends.
+
+-   **Fixed-effects analysis:**\
+    Participants from Waves 8 or 9 who completed the COVID-19 survey and had prior GHQ-12 measures were included to evaluate within-person changes.
+
+![](COVID19UK/fig/fig1.png)
+
+## Outcomes
+
+### GHQ-12 Scoring
+
+-   Mean score reflects average symptom burden; threshold reflects clinical distress prevalence.
+
+-   Fixed-effects analyses used the mean GHQ-12 score (continuous outcome).
+
+Mean symptoms score(0-36)
+
+-   0 = not at all
+
+-   1 = no more than usual
+
+-   2 = rather more than usual
+
+-   3 = much more than usual
+
+Item scores summed across 12 questions
+
+**Binary threshold score (0–12):**
+
+Responses scored as:
+
+-   0 = not at all / no more than usual
+
+-   1 = rather more than usual / much more than usual
+
+Scores summed across items
+
+Clinically significant distress defined as ≥4
+
+## Statistical analysis
+
+### Repeated cross-sectional data
+
+-   Descriptive summaries of GHQ-12 across survey waves
+
+    -   **By survey wave (time)**
+
+    -   **By key sociodemographic characteristics**, including:
+
+        -   Sex
+
+        -   Age group
+
+        -   Ethnicity
+
+        -   Household income
+
+        -   Other predefined subgroups
+
+-   Mean scores and threshold prevalence reported (Tables 1–3)
+
+-   Used to describe population-level trends, not individual change
+
+### Fixed-Effects Models
+
+-   Analysis restricted to participants with **linked pre-pandemic and COVID-19 GHQ-12 data**
+
+-   Fixed-effects linear regression :
+
+    -   ​A regression approach that estimates effects using **within-person variation over time**
+
+    -   Each individual serves as **their own control**
+
+-   Model specification
+
+    -   Included:
+
+        -   Individual fixed effects
+
+        -   Calendar time, modelled as:
+
+            -   Linear term (time)
+
+            -   Quadratic term (time²)
+
+        -   COVID-19 period indicator
+
+    -   COVID-19 coefficient interpreted as:
+
+        -   The deviation from expected GHQ-12 scores based on pre-pandemic trends
+
+-   Heterogeneity analysis
+
+    -   Tested interactions between:
+
+        -   COVID-19 indicator × predefined subgroups
+
+    -   Subgroups tested individually
+
+    -   Interactions with p \< 0.05 included in a final adjusted model
+
+    -   Adjusted estimates interpreted as independent subgroup-specific changes, accounting for overlapping characteristics
+
+# Outcome
+
+## cross-sectional data
+
+![](COVID19UK/fig/fig2.png)
+
+![](COVID19UK/fig/fig3.png)
+
+![](COVID19UK/fig/fig4.png)
+
+-   Mean GHQ-12 and distress prevalence increased over time
+
+-   Larger symptom burden observed among women, younger adults, ethnic minorities, and low-income groups
+
+-   Apparent widening of inequalities during the COVID-19 period
+
+## Fixed-effects analysis
+
+![](COVID19UK/fig/fig5.png)
+
+Overall, GHQ-12 scores during the COVID-19 period were **0.48 points higher** (95% CI 0.07–0.90) than would have been expected had pre-pandemic trends continued.
+
+This indicates a population-wide deterioration in mental health beyond existing temporal trends.
+
+$$
+Y_{it}
+=
+\alpha_i
++
+\beta_1 \,\text{COVID}_{it}
++
+\beta_2 t
++
+\beta_3 t^2
++
+\varepsilon_{it},
+$$
+
+The estimated coefficient
+
+$$
+\hat{\beta}_1 = 0.48
+$$
+
+represents the average deviation of observed GHQ-12 scores during the COVID-19 period from values expected based on pre-pandemic trends.
+
+### Subgroup Heterogeneity
+
+-   To assess heterogeneity in pandemic-associated change, interactions between the COVID-19 indicator and predefined subgroups were fitted.
+
+-   Each subgroup was first examined separately by fitting a fixed-effects linear regression model that included a single interaction term between the COVID-19 indicator and the subgroup variable.
+
+-   Only subgroups for which the interaction term was statistically significant (two-sided ( p \< 0.05 )) in these unadjusted models were retained for inclusion in the final multivariable model.
+
+#### Women vs Men
+
+Women experienced a substantially larger increase in GHQ-12 scores during the COVID-19 period compared with men.
+
+$$
+Y_{it}
+=
+\alpha_i
++
+\beta_1 \text{COVID}_{it}
++
+\gamma_1 (\text{COVID}_{it} \times \text{Female}_i)
++
+\beta_2 t
++
+\beta_3 t^2
++
+\varepsilon_{it}.
+$$
+
+-   For men (reference group):
+
+$$
+\Delta_{\text{Men}} = \beta_1
+$$
+
+-   For women :
+
+$$
+\Delta_{\text{Women}} = \beta_1 + \gamma_1
+$$
+
+------------------------------------------------------------------------
+
+#### Age Groups
+
+Younger adults showed larger within-person increases in GHQ-12 scores during the COVID-19 period compared with older age groups.
+
+For a categorical age variable with reference group ( r ), the model can be written as:
+
+$$
+Y_{it}
+=
+\alpha_i
++
+\beta_1 \text{COVID}_{it}
++
+\sum_{k \neq r}
+\gamma_k
+(\text{COVID}_{it} \times \mathbb{1}\{\text{Age}_i = k\})
++
+\beta_2 t
++
+\beta_3 t^2
++
+\varepsilon_{it}.
+$$
+
+-   COVID-related change for the reference age group:
+
+$$
+\Delta_r = \beta_1
+$$
+
+-   COVID-related change for age group ( k ):
+
+$$
+\Delta_k = \beta_1 + \gamma_k
+$$
+
+# Discussion
+
+-   COVID-19 was associated with a population-wide deterioration in mental health beyond pre-existing trends.
+
+-   Apparent inequalities in cross-sectional analyses largely reflect baseline differences rather than differential within-person change.
+
+-   Fixed-effects analyses identify women and younger adults experiencing greater deterioration.
+
+### limitations
+
+-   Fixed-effects models cannot account for time-varying unmeasured confounders.
+
+-   Analyses focused on the early phase of the pandemic and may not capture longer-term effects.
